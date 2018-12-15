@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func tapSystemSound(_ sender: Any) {
+        AudioServicesPlaySystemSoundWithCompletion(1000){
+            // ここにはシステムサウンドがない終わったあとの処理を記述する
+        }
+    }
+    
 }
 

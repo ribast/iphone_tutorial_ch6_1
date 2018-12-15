@@ -12,6 +12,8 @@
 		9AF7D10121C4A43F0086C1BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF7D0FF21C4A43F0086C1BB /* Main.storyboard */; };
 		9AF7D10321C4A4400086C1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AF7D10221C4A4400086C1BB /* Assets.xcassets */; };
 		9AF7D10621C4A4400086C1BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF7D10421C4A4400086C1BB /* LaunchScreen.storyboard */; };
+		9AF7D10F21C4A4C60086C1BB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF7D10E21C4A4C60086C1BB /* AudioToolbox.framework */; };
+		9AF7D11121C4A6A90086C1BB /* button83.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AF7D11021C4A6A90086C1BB /* button83.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9AF7D10221C4A4400086C1BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AF7D10521C4A4400086C1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AF7D10721C4A4400086C1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AF7D10E21C4A4C60086C1BB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9AF7D11021C4A6A90086C1BB /* button83.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button83.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF7D10F21C4A4C60086C1BB /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				9AF7D0FA21C4A43F0086C1BB /* SampleQuiz */,
 				9AF7D0F921C4A43F0086C1BB /* Products */,
+				9AF7D10D21C4A4C60086C1BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +60,7 @@
 		9AF7D0FA21C4A43F0086C1BB /* SampleQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				9AF7D11021C4A6A90086C1BB /* button83.mp3 */,
 				9AF7D0FB21C4A43F0086C1BB /* AppDelegate.swift */,
 				9AF7D0FD21C4A43F0086C1BB /* ViewController.swift */,
 				9AF7D0FF21C4A43F0086C1BB /* Main.storyboard */,
@@ -62,6 +69,14 @@
 				9AF7D10721C4A4400086C1BB /* Info.plist */,
 			);
 			path = SampleQuiz;
+			sourceTree = "<group>";
+		};
+		9AF7D10D21C4A4C60086C1BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AF7D10E21C4A4C60086C1BB /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF7D10621C4A4400086C1BB /* LaunchScreen.storyboard in Resources */,
+				9AF7D11121C4A6A90086C1BB /* button83.mp3 in Resources */,
 				9AF7D10321C4A4400086C1BB /* Assets.xcassets in Resources */,
 				9AF7D10121C4A43F0086C1BB /* Main.storyboard in Resources */,
 			);
