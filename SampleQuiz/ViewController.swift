@@ -16,12 +16,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    // システムサウンド発生
     @IBAction func tapSystemSound(_ sender: Any) {
         AudioServicesPlaySystemSoundWithCompletion(1000){
             // ここにはシステムサウンドが鳴り終わったあとの処理を記述する
         }
     }
     
+    // カスタムサウンド発生
     @IBAction func tapCustomSound(_ sender: Any) {
         // サウンドURL取得
         let soundUrl = Bundle.main.url(forResource: "button83", withExtension: "mp3")
@@ -32,6 +34,13 @@ class ViewController: UIViewController {
         //カスタムIDを用いて音を鳴らす
         AudioServicesPlaySystemSoundWithCompletion(soundId){
             // ここにはカスタムサウンドが鳴り終わったあとの処理を記述する
+        }
+    }
+    
+    // バイブレーション発生
+    @IBAction func tapVibration(_ sender: Any) {
+        AudioServicesPlaySystemSoundWithCompletion(kSystemSoundID_Vibrate){
+            // ここにはバイブレーションが終わったあとの処理を記述する
         }
     }
 }
