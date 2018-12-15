@@ -18,9 +18,21 @@ class ViewController: UIViewController {
 
     @IBAction func tapSystemSound(_ sender: Any) {
         AudioServicesPlaySystemSoundWithCompletion(1000){
-            // ここにはシステムサウンドがない終わったあとの処理を記述する
+            // ここにはシステムサウンドが鳴り終わったあとの処理を記述する
         }
     }
     
+    @IBAction func tapCustomSound(_ sender: Any) {
+        // サウンドURL取得
+        let soundUrl = Bundle.main.url(forResource: "button83", withExtension: "mp3")
+        
+        // カスタムID設定
+        var soundId: SystemSoundID = 0
+        AudioServicesCreateSystemSoundID(soundUrl! as CFURL, &soundId)
+        //カスタムIDを用いて音を鳴らす
+        AudioServicesPlaySystemSoundWithCompletion(soundId){
+            // ここにはカスタムサウンドが鳴り終わったあとの処理を記述する
+        }
+    }
 }
 
